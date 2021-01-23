@@ -5,9 +5,7 @@ import MenuItem from "./../menuItem/menuItem.component";
 import "./directory.styles.scss";
 
 class Directory extends Component {
-  constructor() {
-    super();
-    this.state = {
+   state = {
       sections: [
         {
           title: "hats",
@@ -42,8 +40,7 @@ class Directory extends Component {
           linkUrl: "",
         },
       ],
-    };
-  }
+    }; 
 
   render() {
     return (
