@@ -1,5 +1,4 @@
 import React from 'react';
-import CollectionPreview from '../preview-collection/collection-preview.component';
 
 import './collection-item.styles.scss';
 
@@ -15,7 +14,7 @@ const CollectionItem = ({ id, name, price, imageUrl }) => (
       className='collection-footer'>
         <span className='name'>{name}</span>
         <span className='price'>{price}</span>
-      </div>
+    </div>
   </div>
 )
 
