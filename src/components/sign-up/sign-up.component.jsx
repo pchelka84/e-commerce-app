@@ -8,7 +8,7 @@ import { auth, createUserProfileDocument } from './../../firebase/firebase.utils
 import './sign-up.styles.scss';
 
 class SignUp extends Component {
-  style = {
+  state = {
     displayName: "",
     email: "",
     password: "",
@@ -45,7 +45,7 @@ class SignUp extends Component {
   handelChange = event => {
     const { name, value } = event.target;
 
-    this.setState({[name]: value})
+    this.setState({ [name]: value })
   }
 
   render() {
