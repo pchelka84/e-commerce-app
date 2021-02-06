@@ -23,13 +23,13 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
   // checks if the snapShot exists at this place
   if (!snapShot.exists) {
-    const  { dispalyName, email } = userAuth;
+    const  { displayName, email } = userAuth;
     const createdAt = new Date();
 
     // Create snapShot at the current place if it doesn't exists
     try {
       await userRef.set({
-        dispalyName, 
+        displayName, 
         email,
         createdAt,
         ...additionalData
