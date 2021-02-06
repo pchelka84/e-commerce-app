@@ -9,10 +9,10 @@ import './sign-up.styles.scss';
 
 class SignUp extends Component {
   state = {
-    displayName: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
+    displayName: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
   }
 
   handleSubmit = async event => {
@@ -42,7 +42,7 @@ class SignUp extends Component {
     }
   };
 
-  handelChange = event => {
+  handleChange = event => {
     const { name, value } = event.target;
 
     this.setState({ [name]: value })
@@ -61,7 +61,7 @@ class SignUp extends Component {
             name="displayName"
             value={displayName}
             onChange={this.handleChange}
-            label='Dispaly Name'
+            label='Display Name'
             required
           />
           <FormInput
@@ -85,7 +85,7 @@ class SignUp extends Component {
             name="confirmPassword"
             value={confirmPassword}
             onChange={this.handleChange}
-            label="confirmPassword"
+            label="Confirm Password"
             required
           />  
           <CustomButton type='submit'> SIGN UP </CustomButton>
