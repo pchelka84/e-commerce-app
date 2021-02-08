@@ -27,7 +27,7 @@ class App extends Component {
               id: snapShot.id,
               ...snapShot.data()
             }
-          })
+          }) 
         });
       } else {
         // if user signs out we still set currentUser to null
