@@ -13,7 +13,6 @@
 
   .empty-message {
     font-size: 18px;
-    margin: 50px auto;
   }
 
   .cart-items {
@@ -21,6 +20,7 @@
     flex-direction: column;
     overflow: auto;
     overflow-x: hidden;
+    margin: 10px auto;
   }
 
   button {
