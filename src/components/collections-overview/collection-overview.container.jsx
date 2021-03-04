@@ -12,9 +12,9 @@ const mapStateToProps = createStructuredSelector({
   isLoading: selectIsCollectionFetching
 });
 
-const collectionsOverviewContainer = compose(
+const CollectionsOverviewContainer = compose(
   connect(mapStateToProps),
   WithSpinner
 )(CollectionsOverview);
 
-export default collectionsOverviewContainer;
+export default CollectionsOverviewContainer;
