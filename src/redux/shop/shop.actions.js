@@ -4,7 +4,7 @@ import { firestore, convertCollectionsSnapshotToMap} from '../../firebase/fireba
 
 export const fetchCollectionsStart = () => ({
   type: ShopActionTypes.FETCH_COLLECTIONS_START
-})
+});
 
 export const fetchCollectionssSucccess = collectionsMap => ({
   type: ShopActionTypes.FETCH_COLLECTIONS_SUCCESS,
