@@ -12,7 +12,6 @@ import Header from './components/header/header.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';   
 import { selectCurrentUser } from './redux/user/user.selectors'; 
 
@@ -20,27 +19,27 @@ class App extends Component {
   unsubscribeFromAuth = null; 
 
   componentDidMount() {
-    const { setCurrentUser } = this.props; 
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-      if (userAuth) {
-        const userRef = await createUserProfileDocument(userAuth);
+    // const { setCurrentUser } = this.props; 
+  //   this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+  //     if (userAuth) {
+  //       const userRef = await createUserProfileDocument(userAuth);
 
-        userRef.onSnapshot(snapShot => {
-          setCurrentUser({
-              id: snapShot.id,
-              ...snapShot.data() 
-          });
-        });
-      } else {
-        // if user signs out we still set currentUser to null
-        setCurrentUser(userAuth)
-      }
-    });
+  //       userRef.onSnapshot(snapShot => {
+  //         setCurrentUser({
+  //             id: snapShot.id,
+  //             ...snapShot.data() 
+  //         });
+  //       });
+  //     } else {
+  //       // if user signs out we still set currentUser to null
+  //       setCurrentUser(userAuth)
+  //     }
+  // });
   }
 
-  componentWillUnmount() {
-    this.unsubscribeFromAuth();
-  }
+  // componentWillUnmount() {
+  //   this.unsubscribeFromAuth();
+  // }
 
   render() {
     return ( 
