@@ -19,6 +19,10 @@ export const MenuItemContainer = styled.div`
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
+
+    & .content {
+      opacity: 0.9;
+    }
   }
 
   &:first-child {
@@ -53,6 +57,12 @@ export const ContentContainer = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+
+  @media screen and (max-width: 500px) {  
+    height: 85px;
+    padding: 0 15px;
+    opacity: 0.8;
+  }
 `;
 
 export const ContentTitle = styled.h1`
@@ -60,10 +70,18 @@ export const ContentTitle = styled.h1`
   margin-bottom: 6px;
   font-size: 22px;
   color: #4a4a4a;
+
+  @media screen and (max-width: 500px) { 
+    font-size: 18px; 
+  }
 `;
 
 export const ContentSubtitle = styled.span`
   font-weight: lighter;
   font-size: 16px;
+
+  @media screen and (max-width: 500px) { 
+    font-size: 14px; 
+  }
 `;
 
