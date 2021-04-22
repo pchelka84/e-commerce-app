@@ -32,15 +32,29 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
-  @media screen and (max-width: 800px) {
+ 
+  @media screen and (max-width: 800px) { 
     width: 80%;
     font-size: .9rem;
+  }
+
+  @media screen and (max-width: 430px) {  
+    font-size: .7rem;
+  }
+
+  // iPhone 5/SE
+  @media screen and (max-width: 330px) {  
+    font-size: .5rem;
   }
 `;
 
 export const OptionLink = styled(Link)`
    padding: 10px 15px;
    cursor: pointer;
+
+   @media screen and (max-width: 430px) { 
+    padding: 10px 10px; 
+  }
+ 
 `;
 
