@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Lexend Peta", sans-serif;
     padding: 20px 60px;
+
+    @media screen and (max-width: 800px) {
+			padding: 10px;
+		}
   }
 
   a {
