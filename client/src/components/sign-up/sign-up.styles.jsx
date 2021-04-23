@@ -5,16 +5,6 @@ export const SignUpContainer = styled.div`
   flex-direction: column;
   width: 430px;
 
-  @media screen and (max-width: 900px) {
-    width: 50%;
-    padding: 0 20px 0 10px;
-
-    h2 {
-      font-size: 1rem;
-    }
-  }
-
-
   @media screen and (max-width: 450px) { 
     width: 100%;
     padding: 0 10px 10px 10px;  
