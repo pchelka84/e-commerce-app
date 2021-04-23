@@ -12,7 +12,7 @@ export const CollectionPreviewContainer = styled.div`
 
 export const PreviewTitle = styled.h1`
   font-size: 28px;
-  margin-bottom: 25px;
+  margin: 30px 0;
   cursor: pointer;
 
   &:hover {

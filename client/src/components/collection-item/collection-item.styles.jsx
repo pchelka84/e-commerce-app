@@ -8,6 +8,7 @@ export const CollectionItemContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative; 
+  margin-bottom: 12px;
 
   &:hover {
     .image {
@@ -21,7 +22,7 @@ export const CollectionItemContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    width: 100%;
+    width: 45vw;
     height: 250px;
 
     &:hover {
