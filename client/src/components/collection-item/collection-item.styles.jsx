@@ -21,7 +21,8 @@ export const CollectionItemContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    width: 40vw;
+    width: 100%;
+    height: 250px;
 
     &:hover {
       .image {
@@ -44,11 +45,15 @@ export const BackgroundImage = styled.div`
 `;
 
 export const CollectionFooterContainer = styled.div`
-  width: 100%;
+  width: 95%;
   height: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 18px;
+
+  @media screen and (max-width: 400px) { 
+    font-size: 14px; 
+  }
 `;
 
 export const NameContainer = styled.span`
@@ -61,7 +66,7 @@ width: 10%;
 `;
 
 export const AddButton = styled(CustomButton)`
-width: 80%;
+  width: 80%;
   opacity: 0.7;
   position: absolute;
   top: 225px;
@@ -71,6 +76,11 @@ width: 80%;
     display: block;
     opacity: 0.9;
     min-width: unset;
+    top: 150px;
     padding: 0 10px;
+  }
+
+  @media screen and (max-width: 400px) { 
+    font-size: .4rem;
   }
 `;
