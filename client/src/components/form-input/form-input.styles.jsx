@@ -16,6 +16,14 @@ export const GroupContainer = styled.div`
   input[type='password'] {
     letter-spacing: 0.3em;
   }
+
+  @media screen and (max-width: 450px) { 
+    margin: 20px 0;
+
+    input[type='password'] {
+    letter-spacing: 0.1em;
+  }
+  }
 `;
 
 export const FormInputContainer = styled.input`
@@ -38,6 +46,11 @@ export const FormInputContainer = styled.input`
   &:focus ~ .form-input-label {
     ${shrinkLabelSyles};
   }
+
+  @media screen and (max-width: 450px) { 
+    font-size: 14px;
+    margin: 15px 0;
+  }
 `;
 
 export const FormInputLabel = styled.label`
@@ -52,6 +65,10 @@ export const FormInputLabel = styled.label`
 
   &.shrink {
    ${shrinkLabelSyles};
+  }
+
+  @media screen and (max-width: 450px) { 
+    font-size: 12px;
   }
 `;
 

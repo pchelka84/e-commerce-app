@@ -9,7 +9,7 @@ export const SignInContainer = styled.div`
   @media screen and (max-width: 450px) { 
     width: 100%;
     padding: 0 10px 10px 10px;  
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     h2 {
       font-size: .9rem;
