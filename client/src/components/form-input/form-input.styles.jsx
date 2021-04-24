@@ -48,7 +48,7 @@ export const FormInputContainer = styled.input`
   }
 
   @media screen and (max-width: 450px) { 
-    /* font-size: 14px; */
+    font-size: 14px;
     margin: 15px 0;
   }
 `;
