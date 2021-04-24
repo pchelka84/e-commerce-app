@@ -47,21 +47,19 @@ export const CustomButtonContainer = styled.button`
   height: 50px;
   letter-spacing: 0.5px;
   line-height: 48px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  padding: 0 15px 0 15px;
+  font-size: 14px;
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
-  font-weight: bolder;
+  font-weight: bold;
   border:none;
   cursor: pointer;
   display: flex;
   justify-content: center;
 
   @media screen and (max-width: 450px) {
-    min-width: 100px;
-    padding: 0 15px 0 15px;
-    font-size: 12px; 
-    font-weight: bold;
+    min-width: 100px; 
+    font-size: 12px;  
   }
 
   ${getButtonStyles};
