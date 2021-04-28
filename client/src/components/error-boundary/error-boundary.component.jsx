@@ -2,13 +2,9 @@ import React from 'react';
 
 import { ErrorImageOverlay, ErrorImageText, ErrorImageContainer } from './error-boundary.styles';
 
-class ErrorBoundary extends React.Components {
-  constructor() {
-    super();
-
-    this.state = {
-      hassErrored: false
-    }
+class ErrorBoundary extends React.Component {  
+  state = {
+        hassErrored: false
   }
 
   static getDerivedstateFromError(error) {
